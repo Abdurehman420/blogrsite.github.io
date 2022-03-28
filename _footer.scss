@@ -1,0 +1,42 @@
+.footer {
+  background-color: hsl(240, 10%, 16%);
+  grid-column: 1 / -1;
+  border-top-right-radius: 10rem;
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  @include responsive(mtablet) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  &__logo {
+    img {
+      @include responsive(mtablet) {
+        padding: 3rem 0;
+      }
+    }
+  }
+  &__head {
+    font-size: 2rem;
+    color: hsl(240, 2%, 79%);
+    @include responsive(mtablet) {
+      padding-top: 3rem;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding-top: 3rem;
+  }
+  &__item {
+    font-size: $defaultfontsize;
+    color: hsl(240, 2%, 79%);
+    font-weight: 300;
+    padding: 1rem 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: text-decoration 200ms;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

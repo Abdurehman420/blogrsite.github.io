@@ -1,0 +1,42 @@
+.header {
+  &__hidden__list {
+    position: absolute;
+    top: 3rem;
+    left: -2rem;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    list-style: none;
+    padding: 2rem;
+    height: 25rem;
+    width: 15rem;
+    border-radius: 1rem;
+    text-align: center;
+    // display: none;
+    font-family: $fontprimary;
+    opacity: 0;
+    transform: translateY(-150%);
+    transition: all 300ms;
+  }
+
+  &__hidden__list.open {
+    transform: translateY(0);
+    // display: block;
+    opacity: 1;
+  }
+
+  &__hidden__item {
+    color: black;
+    padding: 1rem 0;
+    font-family: $fontprimary;
+    font-weight: 300;
+    transition: all 200ms;
+
+    &:hover {
+      font-weight: 600;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(#000000, 0.1);
+    }
+  }
+}

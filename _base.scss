@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: $fontprimary;
+  font-weight: 600;
+
+  @include responsive(desktop) {
+    font-size: 75%;
+  }
+
+  @include responsive(large-tablet) {
+    font-size: 55%;
+  }
+  @include responsive(mtablet) {
+    font-size: 50%;
+  }
+  @include responsive(mobile) {
+    font-size: 45%;
+  }
+}
+body {
+  line-height: 1.6;
+}
+.container {
+  display: grid;
+  position: relative;
+  grid-template-columns: minmax(8rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(
+      8rem,
+      1fr
+    );
+  grid-template-rows: 90vh min-content min-content repeat(2, min-content);
+  @include responsive(large-tablet) {
+    grid-template-rows: 80vh min-content min-content repeat(2, min-content);
+
+    // padding: 15rem 0;
+  }
+
+  @include responsive(mobile) {
+    grid-template-rows: 70vh min-content min-content repeat(2, min-content);
+  }
+}

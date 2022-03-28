@@ -1,0 +1,110 @@
+.section-about {
+  grid-column: 2 / -1;
+  // background-color: olivedrab;
+  @include responsive(large-tablet) {
+    grid-column: 1 / -1;
+  }
+
+  padding: 10rem 0;
+  // display: grid;
+  // grid-template-columns: repeat(10, 1fr);
+  // grid-template-rows: repeat(10, 1fr);
+  &__head {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-column: 4 / 8;
+    @include responsive(large-tablet) {
+      padding: 5rem 0;
+    }
+
+    h2 {
+      font-size: 4rem;
+      font-family: $fontprimary;
+      font-weight: 700;
+      color: $headings;
+    }
+  }
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    // height: 100vh;
+  }
+  &__img {
+    grid-column: 5 / 9;
+    grid-row: 1 / -1;
+    background-image: url(illustration-editor-desktop.svg);
+    background-position-x: 0rem;
+    background-position-y: -5rem;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    @include responsive(large-tablet) {
+      // display: none;
+      background-image: url(illustration-editor-mobile.svg);
+      grid-column: 1 / -1;
+      grid-row: 1 / 4;
+      background-position-x: 50%;
+      // display: block;
+      width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+
+      // padding: 15rem 0;
+    }
+
+    // img {
+    //   width: 100%;
+    // }
+  }
+  &__content {
+    grid-column: 1 / 5;
+    grid-row: 1 /-1;
+    padding: 12rem 6rem;
+    @include responsive(large-tablet) {
+      grid-column: 1 / -1;
+      grid-row: 4 / -1;
+      text-align: center;
+      padding: 0 6rem;
+    }
+    @include responsive(mtablet) {
+      grid-column: 1 / -1;
+      grid-row: 4 / -1;
+      text-align: center;
+      padding: 0 6rem;
+    }
+    @include responsive(mobile) {
+      grid-column: 1 / -1;
+      grid-row: 4 / -1;
+      text-align: center;
+      padding: 0 6rem;
+    }
+  }
+
+  &__content-1,
+  &__content-2 {
+    display: flex;
+    flex-direction: column;
+
+    p {
+    }
+    h3 {
+    }
+  }
+  &__content-2 {
+    padding-top: 8rem;
+  }
+}
+.sectionheading {
+  font-size: 2.5rem;
+  color: $headings;
+}
+.sectionpara {
+  font-size: $defaultfontsize;
+  font-weight: 300;
+  font-family: $fontprimary;
+  padding-top: 3rem;
+  color: hsl(207, 13%, 34%);
+}

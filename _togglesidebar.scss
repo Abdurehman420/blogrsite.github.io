@@ -1,0 +1,112 @@
+.sidebar {
+  position: absolute;
+  // top: 10rem;
+  // left: 25rem;
+  width: 40rem;
+  // height: 40rem;
+  padding: 2rem 2rem;
+  background-color: white;
+  display: none;
+  border-radius: 1rem;
+  z-index: 999999;
+  transform: translateY(-150%);
+  transition: transform 300ms;
+  text-align: center;
+  // display: flex;
+  @include responsive(mtablet) {
+    display: block;
+    top: 10rem;
+    left: 25rem;
+  }
+  @include responsive(mobile) {
+    left: 10rem;
+  }
+  &.show {
+    transform: translateY(0);
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    padding: 1rem 0;
+    a {
+      font-size: 2rem;
+      color: hsl(208, 49%, 24%);
+
+      font-family: $fontprimary;
+      font-weight: 600;
+
+      svg {
+        transition: all 300ms;
+      }
+      &:hover,
+      &:visited {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      border-radius: 1rem;
+
+      background-color: rgba(hsl(240, 2%, 79%), 0.2);
+      display: none;
+      li {
+        font-size: 1.7rem;
+        font-family: $fontprimary;
+        padding: 1rem 0;
+        cursor: pointer;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+    padding: 1rem 0;
+  }
+
+  &__btn-1 {
+    margin: 2rem 0;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: black;
+    font-family: $fontprimary;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  &__btn-2 {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border-radius: 3rem;
+    color: white;
+    font-family: $fontprimary;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+      hsl(355, 100%, 74%),
+      hsl(353, 100%, 62%)
+    );
+  }
+}
+.nodisplay-1.show {
+  display: block;
+}
+.nodisplay-2.show {
+  display: block;
+}
+.nodisplay-3.show {
+  display: block;
+}

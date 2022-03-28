@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | [Blogr]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <nav class="sidebar">
+      <ul class="sidebar__list">
+        <li class="sidebar__item item-1">
+          <a href="#">Product
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke=" hsl(356, 100%, 66%)" stroke-width="2" d="M1 1l4 4 4-4" id="bottomarrow"/></svg>
+          </a>
+          <ul class="nodisplay-1">
+            <li class="sidebar__item">Overview</li>
+            <li class="sidebar__item">Pricing</li>
+            <li class="sidebar__item">Marketplace</li>
+            <li class="sidebar__item">Features</li>
+            <li class="sidebar__item">Integrations</li>
+          </ul>
+        </li>
+        <li class="sidebar__item item-2">
+          <a href="#">Company
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke=" hsl(356, 100%, 66%)" stroke-width="2" d="M1 1l4 4 4-4" id="bottomarrow"/></svg>
+          </a>
+          <ul class="nodisplay-2">
+            <li class="sidebar__item">About</li>
+            <li class="sidebar__item">Team</li>
+            <li class="sidebar__item">Blog</li>
+            <li class="sidebar__item">Careers</li>
+          </ul>
+        </li>
+        <li class="sidebar__item item-3">
+          <a href="#">Connect
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke=" hsl(356, 100%, 66%)" stroke-width="2" d="M1 1l4 4 4-4" id="bottomarrow"/></svg>
+          </a>
+          <ul  class="nodisplay-3">
+            <li class="sidebar__item">Contact</li>
+            <li class="sidebar__item">Newsletter</li>
+            <li class="sidebar__item">LinkedIn</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="sidebar__btns">
+        <button class="sidebar__btn-1">Login</button>
+        <button class=" sidebar__btn-2">Signup</button>
+      </div>
+    </nav>
+ 
+    
+    <header class="header">
+      <div class="header__container">
+      <div class="header__top">
+      <div class="header__left">
+       <img src="logo.svg" class="header__logo" alt="">
+       <nav class="header__nav">
+         <ul class="header__nav__list">
+           <li class="header__nav__list__items it-1">
+             <a href="#">
+             Product
+            
+             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#fff" stroke-width="2" d="M1 1l4 4 4-4" id="bottomarrow"/></svg>
+            </a>
+            
+             
+             <ul class="header__hidden__list">
+              <li class="header__hidden__item">Overview</li>
+              <li class="header__hidden__item">Pricing</li>
+              <li class="header__hidden__item">Marketplace</li>
+              <li class="header__hidden__item">Features</li>
+              <li class="header__hidden__item">Integrations</li>
+            </ul>
+            </li>
+            <li class="header__nav__list__items it-2">
+              <a href="#">
+              Company
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#fff" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+            </a>
+            <ul class="header__hidden__list list-2" style="height: 20rem;">
+              <li class="header__hidden__item">About</li>
+              <li class="header__hidden__item">Team</li>
+              <li class="header__hidden__item">Blog</li>
+              <li class="header__hidden__item">Careers</li>
+              
+            </ul>
+            </li>
+            <li class="header__nav__list__items it-3">
+              <a href="#">
+              Connect
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7"><path fill="none" stroke="#fff" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+            </a>
+            <ul class="header__hidden__list list-3" style="height: 15rem;">
+              <li class="header__hidden__item">Contact</li>
+              <li class="header__hidden__item">Newsletter</li>
+              <li class="header__hidden__item">LinkedIn</li>
+             
+            </ul>
+            </li>
+            
+          </ul>
+        </nav>
+      
+</div>
+<div class="open">
+<svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" id="open"/></g></svg>
+</div>
+<div class="close">
+<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><path d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z" fill="#FFF" fill-rule="evenodd" id="close"/></svg>
+</div>
+  <div class="header__right">
+  <button class="header__btn-1">   Login </button> 
+  <button class="header__btn-2">  Sign up </button> 
+  
+</div>
+</div>
+<div class="header__content">
+
+ <h1> A modern publishing platform </h1>
+  <p> Grow your audience and build your online brand </p>
+  <div class="header__content__btns">
+   <button class="header__btn-2"> Start for Free</button>
+  <button class="header__btn-3">Learn More</button> 
+</div>
+</div>
+</div>
+</header>
+<section class="section-about">
+  <div class="section-about__head">
+    <h2>Designed for the future </h2> 
+ </div>
+
+  <div class="section-about__main">
+    
+    <div class="section-about__img">
+     
+
+    </div>
+    <div class="section-about__content">
+
+    
+<div class="section-about__content-1">
+  <h3 class="sectionheading"> Introducing an extensible editor </h3>
+  <p class="sectionpara"> Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+</p>
+</div>
+<div class="section-about__content-2">
+  <h3 class="sectionheading"> Robust content management </h3>
+  <p class="sectionpara" > Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+</p>
+</div>
+</div>
+</div>
+
+</section>
+<section class="section-mobile"> 
+<div class="section-mobile__container">
+  <div class="section-mobile__mobs">
+  <img src="illustration-phones.svg" alt="phones">
+
+</div>
+<div class="section-mobile__content">
+
+
+
+ <h2> State of the Art Infrastructure </h2>
+  <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.  
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+  </p>
+</div>
+</section>
+<section class="section-feature">
+
+<div class="section-feature__img">
+  
+
+</div>
+<div class="section-feature__content">
+
+<div class="  section-feature__content-1">
+
+ <h3 class="sectionheading"> Free, open, simple </h3>
+  <p class="sectionpara">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+</p> 
+</div>
+  <div class="  section-feature__content-2">
+  <h3 class="sectionheading"> Powerful tooling </h3>
+  <p class="sectionpara"> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+  </p>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+
+<div class="footer__logo">
+  <img src="logo.svg" alt="">
+</div>
+<div class="footer__list-1">
+  <h4 class="footer__head">
+    Product
+
+  </h4>
+  <ul class="footer__list">
+    <li class="footer__item">Overview</li>
+    <li class="footer__item">Pricing</li>
+    <li class="footer__item">Marketplace</li>
+    <li class="footer__item">Features</li>
+    <li class="footer__item">Integrations</li>
+  </ul>
+
+</div>
+<div class="footer__list-2">
+  <h4 class="footer__head">
+   Company
+
+  </h4>
+  <ul class="footer__list">
+    <li class="footer__item">About</li>
+    <li class="footer__item">Team</li>
+    <li class="footer__item">Blog</li>
+    <li class="footer__item">Careers</li>
+    
+  </ul>
+
+</div>
+<div class="footer__list-3">
+  <h4 class="footer__head">
+    Connent
+
+  </h4>
+  <ul class="footer__list">
+    <li class="footer__item">Contact</li>
+    <li class="footer__item">Newsletter</li>
+    <li class="footer__item">LinkedIn</li>
+    
+  </ul>
+
+</div>
+  
+
+</footer>
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
